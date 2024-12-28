@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilliant Angels Junior School - Kyengera</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/school-logo.jpg">
+    <link rel="icon" type="image/x-icon" href="./images/school-logo.jpg">
+    <link rel="apple-touch-icon" href="./images/school-logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Replace with your EmailJS public key
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/school-logo.jpg" alt="Brilliant Angels Junior School Logo">
+                <span>Brilliant Angels Junior School</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#programs">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('./images/play.jpg')"></div>
+            <div class="slide" style="background-image: url('./images/learners.jpg')"></div>
+            <div class="slide" style="background-image: url('./images/studio.jpg')"></div>
+        </div>
+        <div class="container">
+            <h1>Welcome to Brilliant Angels Junior School</h1>
+            <p>Nurturing Excellence in Education</p>
+            <a href="#admissions" class="cta-button">Apply Now</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="section-pattern dots-pattern"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-circle" style="top: 10%; left: 5%"></div>
+            <div class="shape shape-square" style="bottom: 20%; right: 10%"></div>
+        </div>
+        <div class="container">
+            <h2>Our Vision & Mission</h2>
+            <div class="vision-mission-grid">
+                <div class="vision-box">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vision</h3>
+                    <p>To educate, train & nurture the future generation of high integrity entrenched in the fear of God</p>
+                </div>
+                <div class="mission-box">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Mission</h3>
+                    <p>To facilitate first class education and civilization within and outside Uganda with hope that there will be a better world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs-section">
+        <div class="section-pattern wave-pattern"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-triangle" style="top: 15%; right: 5%"></div>
+            <div class="shape shape-circle" style="bottom: 10%; left: 15%"></div>
+        </div>
+        <div class="container">
+            <h2>Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="icon-wrapper program-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIP.V83UEjeKmsC7tbKAwtbUtwHaFj?rs=1&pid=ImgDetMain" alt="Day Care">
+                    <h3>Day Care</h3>
+                    <p>Nurturing care for the youngest learners</p>
+                </div>
+                <div class="program-card">
+                    <div class="icon-wrapper program-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIP.st-kFJzf5-C9F-UdsLy0BgHaE7?rs=1&pid=ImgDetMain" alt="Pre-School">
+                    <h3>Pre-School</h3>
+                    <p>Early childhood development program</p>
+                </div>
+                <div class="program-card">
+                    <div class="icon-wrapper program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <img src="./images/learners.jpg" alt="Primary">
+                    <h3>Primary</h3>
+                    <p>Comprehensive primary education from P1 to P7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="admissions-section">
+        <div class="section-pattern dots-pattern"></div>
+        <div class="container">
+            <h2>Admissions</h2>
+            <div class="fees-grid">
+                <div class="fees-card">
+                    <h3>Boarding Section</h3>
+                    <ul>
+                        <li>P1-P6: 550,000/=</li>
+                        <li>P7: 600,000/=</li>
+                    </ul>
+                </div>
+                <div class="fees-card">
+                    <h3>Day Section</h3>
+                    <ul>
+                        <li>Pre-school: 250,000/=</li>
+                        <li>P1-P3: 300,000/=</li>
+                        <li>P4-P6: 350,000/=</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#enroll" class="cta-button">Enroll Now</a>
+        </div>
+    </section>
+
+    <section id="enroll" class="enroll-section">
+        <div class="floating-shapes">
+            <div class="shape shape-circle" style="top: 20%; right: 10%; background: rgba(255,255,255,0.1)"></div>
+            <div class="shape shape-square" style="bottom: 15%; left: 5%; background: rgba(255,255,255,0.1)"></div>
+        </div>
+        <div class="container">
+            <h2>Enroll Now</h2>
+            <div class="enroll-grid">
+                <div class="enroll-info">
+                    <h3>Admission Process</h3>
+                    <ul class="process-steps">
+                        <li>
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Fill Application</h4>
+                                <p>Complete the enrollment form with student details</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Submit Documents</h4>
+                                <p>Provide necessary academic and medical records</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Assessment</h4>
+                                <p>Student placement assessment and interview</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4>Confirmation</h4>
+                                <p>Receive admission confirmation and welcome package</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="enroll-form">
+                    <form id="enrollmentForm">
+                        <div class="form-group">
+                            <label for="studentName">Student's Full Name</label>
+                            <input type="text" id="studentName" required 
+                                   placeholder="Enter student's full name"
+                                   autocomplete="name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" required
+                                       max="2024-12-31">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" required>
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Program</label>
+                            <select id="program" required>
+                                <option value="" disabled selected>Select Program</option>
+                                <option value="daycare">Day Care</option>
+                                <option value="preschool">Pre-School</option>
+                                <option value="primary">Primary</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentName">Parent/Guardian Name</label>
+                            <input type="text" id="parentName" required
+                                   placeholder="Enter parent/guardian name"
+                                   autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required
+                                   placeholder="Enter phone number"
+                                   autocomplete="tel"
+                                   pattern="[0-9]{10,}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required
+                                   placeholder="Enter email address"
+                                   autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" rows="4"
+                                      placeholder="Any additional information you'd like to share"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-pattern dots-pattern"></div>
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>P.O. Box 51, Kyengera, Wakiso</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone Numbers</h3>
+                        <p>0754-715704</p>
+                        <p>0758-521046</p>
+                        <p>0775-849774</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Address</h3>
+                        <p>brilliantangelsjuniorschool@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7576927500745!2d32.4661!3d0.3126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTgnNDUuNCJOIDMywrAyNyc1OC4wIkU!5e0!3m2!1sen!2sug!4v1635770000000!5m2!1sen!2sug" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>P.O. Box 51, Kyengera, Wakiso</p>
+                    <p>Tel: 0754-715704, 0758-521046, 0775-849774</p>
+                    <p>Email: brilliantangelsjuniorschool@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brilliant Angels Junior School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
