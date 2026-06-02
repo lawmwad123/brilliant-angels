@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brilliant-angels.vercel.app/sitemap.xml
